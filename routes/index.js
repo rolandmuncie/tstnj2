@@ -26,6 +26,8 @@ router.get('/profile', function(req, res) {
     var user = process.env.USERNAME;
 
     console.log('user:' + user);
+    console.log('client:' + process.env.CLIENTNAME);
+    console.log('us:' + process.env.USER);
     //you probably also want to pass this to your view
     res.json(user);
 });
