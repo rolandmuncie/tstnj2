@@ -25,9 +25,9 @@ router.get('/ag', function(req, res, next) {
 router.get('/profile', function(req, res) {
     var user = process.env.USERNAME;
 
-    console.log('user:' + user);
-    console.log('client:' + process.env.CLIENTNAME);
-    console.log('us:' + process.env.USER);
+    for(var attributename in process.env){
+        console.log(attributename+": "+process.env[attributename]);
+    }
     //you probably also want to pass this to your view
     res.json(user);
 });
