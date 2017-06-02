@@ -22,7 +22,15 @@ router.get('/ag', function(req, res, next) {
 });
 
 
-router.get('/dssdata', function(req,res){
+router.get('/profile', function(req, res) {
+    var user = process.env.USERNAME;
+
+    //you probably also want to pass this to your view
+    res.json(user);
+});
+
+
+router.get('/dssdata', function(req,res, next){
 
     pg.connect(conString, function (err, client, done) {
         if (err) {
