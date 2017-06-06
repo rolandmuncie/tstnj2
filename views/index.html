@@ -40,24 +40,18 @@
                 <li><a ui-sref="ecoainput">eCOA Trials Input</a></li>
                 <li><a ui-sref="dssoutput">DSS Trials Output</a></li>
                 <li><a ui-sref="ecoaoutput">eCOA Trials Output</a></li>
+                <li><div ng-controller="dssUser" style="height: 100%;"><p>User: {{user}}</p> </div> </il>
+
             </ul>
          </div><!--/.nav-collapse -->
-        <div ng-controller="dssUser" style="height: 100%;"><p>User: {{user}}</p> </div>
+
     </div>
 </nav>
 
 
 
 
-<div style="padding: 4px;">
-    <input placeholder="Filter..." type="text"
-           oninput="onFilterChanged(this.value)"
-           ondblclick="filterDoubleClicked(event)"
-           class="hide-when-small"
-           style="color: #333; width: 150px;"
-    />
 
-</div>
 
 
 

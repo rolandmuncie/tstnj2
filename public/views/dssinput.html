@@ -1,0 +1,27 @@
+<br><br><h1>oasch{{msg}}</h1>
+
+
+<div style="position: absolute; padding-top: 4px; padding-left: 8px; top: 0px; left: 0px;">
+    <input placeholder="Filter..." type="text" oninput="onFilterChanged(this.value)"/>
+    <button style="margin-left: 20px;" onclick="onPrintQuickFilterTexts(this.value)">Print Quick Filter Texts</button>
+    <span style="margin-left: 50px">
+        <label>
+            <input onchange="reset()" type="radio" id="cbNormal" name="cache" checked />
+            Normal Quick Filter
+        </label>
+        <label>
+            <input onchange="reset()" type="radio" id="cbCache" name="cache"/>
+            Cache Quick Filter
+        </label>
+    </span>
+</div>
+<div ng-controller="dssInputCtrl" style="height: 100%; padding-top: 20px; box-sizing: border-box;">
+    <div style="padding: 4px;">
+        <input placeholder="Filter..." type="text"
+               oninput="onFilterChanged(this.value)"
+               class="hide-when-small"
+               style="color: #333; width: 150px;"
+        />
+    </div>
+    <div ag-grid="gridOptions" class="ag-fresh" style="height: 100%;"></div>
+</div>

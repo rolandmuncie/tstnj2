@@ -46,7 +46,7 @@ module.controller("GreenCtrl", function($scope) {
 //     var aboutState = {
 //         name: 'about',
 //         url: '/about',
-//         templateUrl:"views/red.html",
+//         templateUrl:"views/dssinput.html",
 //         controller: 'RedCtrl'
 //     }
 //

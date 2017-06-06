@@ -52,7 +52,15 @@
                         </div>
                     </a>
                 </div>
+                <div style="padding: 4px;">
+                    <input placeholder="Filter..." type="text"
+                           oninput="onFilterChanged(this.value)"
+                           ondblclick="filterDoubleClicked(event)"
+                           class="hide-when-small"
+                           style="color: #333; width: 150px;"
+                    />
 
+                </div>
 
             </div>
         </div>
